@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скачать — KashmaOS</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0a0a14; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, sans-serif; min-height: 100vh; }
+        nav { background: #111122; padding: 15px 0; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #222; }
+        nav a { color: #ccc; text-decoration: none; margin: 0 20px; font-size: 16px; transition: color 0.3s; }
+        nav a:hover { color: #8a2be2; }
+        header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 60px 20px; text-align: center; border-bottom: 3px solid #8a2be2; }
+        header h1 { font-size: 48px; color: #fff; text-shadow: 0 0 20px #8a2be2; }
+        .content { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
+        .dl-card { background: #15152a; border: 1px solid #2a2a4a; border-radius: 12px; padding: 40px; margin-bottom: 30px; text-align: center; transition: border-color 0.3s; }
+        .dl-card:hover { border-color: #8a2be2; }
+        .dl-card h2 { font-size: 24px; color: #fff; margin-bottom: 10px; }
+        .dl-card p { color: #888; margin-bottom: 20px; }
+        .dl-card .btn { display: inline-block; padding: 14px 40px; background: linear-gradient(135deg, #8a2be2, #5b1f9e); color: #fff; text-decoration: none; border-radius: 8px; font-size: 18px; transition: transform 0.2s, box-shadow 0.2s; }
+        .dl-card .btn:hover { transform: scale(1.05); box-shadow: 0 0 25px #8a2be2; }
+        .dl-card .btn.green { background: linear-gradient(135deg, #2d8a4e, #1a5e30); }
+        .dl-card .btn.green:hover { box-shadow: 0 0 25px #2d8a4e; }
+        .req { background: #15152a; border: 1px solid #2a2a4a; border-radius: 12px; padding: 30px; margin-top: 30px; }
+        .req h3 { color: #8a2be2; margin-bottom: 15px; }
+        .req ul { list-style: none; padding: 0; }
+        .req li { padding: 8px 0; color: #aaa; border-bottom: 1px solid #1a1a30; }
+        .req li::before { content: " "; color: #8a2be2; }
+        footer { background: #111122; text-align: center; padding: 30px 20px; border-top: 1px solid #222; color: #555; font-size: 14px; }
+        footer a { color: #8a2be2; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="download.html">Скачать</a>
+        <a href="news.html">Новости</a>
+        <a href="legal.html">Документы</a>
+        <a href="contact.html">Контакты</a>
+        <a href="https://kashmaos.com" target="_blank">kashmaos.com</a>
+        <a href="https://kashmaos.ru" target="_blank">kashmaos.ru</a>
+    </nav>
+    <header>
+        <h1>Скачать KashmaOS</h1>
+    </header>
+    <div class="content">
+        <div class="dl-card">
+            <h2>KashmaOS v1.0</h2>
+            <p>Полная версия операционной системы. Windows 10/11, 64-bit. Размер: ~2 MB.</p>
+            <a href="#" class="btn">Скачать KashmaOS (.exe)</a>
+        </div>
+        <div class="dl-card">
+            <h2>Kashmaroom (бета)</h2>
+            <p>Онлайн-игра в стиле Шарарам. Пока доступна локальная версия.</p>
+            <a href="#" class="btn green">Скачать Kashmaroom (.exe)</a>
+        </div>
+        <div class="req">
+            <h3>Системные требования</h3>
+            <ul>
+                <li>Windows 10 / 11 (64-bit)</li>
+                <li>2 MB свободного места</li>
+                <li>Минимум 256 МБ RAM</li>
+                <li>Монитор 800x600 или больше</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; 2026 <a href="about.html">KF Production / KashmaOS Studios</a>. Все права защищены.
+        <br><a href="https://kashmaos.com" target="_blank">kashmaos.com</a> &middot; <a href="https://kashmaos.ru" target="_blank">kashmaos.ru</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KashmaOS — KF Production</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a14;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid #8a2be2;
+        }
+        header h1 {
+            font-size: 48px;
+            color: #fff;
+            text-shadow: 0 0 20px #8a2be2, 0 0 40px #8a2be2;
+            margin-bottom: 10px;
+        }
+        header h1 span { color: #8a2be2; }
+        header p {
+            font-size: 20px;
+            color: #aaa;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        nav {
+            background: #111122;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #222;
+        }
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: #8a2be2; }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: radial-gradient(ellipse at center, #1a1a2e 0%, #0a0a14 70%);
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #999;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .hero .btn {
+            display: inline-block;
+            padding: 14px 40px;
+            background: linear-gradient(135deg, #8a2be2, #5b1f9e);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .hero .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #8a2be2;
+        }
+        .news {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .news h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #fff;
+            text-align: center;
+        }
+        .news-card {
+            background: #15152a;
+            border: 1px solid #2a2a4a;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: border-color 0.3s;
+        }
+        .news-card:hover { border-color: #8a2be2; }
+        .news-card .date {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .news-card h3 {
+            font-size: 20px;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+        .news-card p {
+            font-size: 15px;
+            color: #888;
+            line-height: 1.6;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 60px 20px;
+            background: #0d0d1a;
+        }
+        .feature {
+            background: #15152a;
+            border: 1px solid #2a2a4a;
+            border-radius: 12px;
+            padding: 30px;
+            width: 260px;
+            text-align: center;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+        .feature:hover {
+            border-color: #8a2be2;
+            transform: translateY(-5px);
+        }
+        .feature .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .feature h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            color: #888;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        footer {
+            background: #111122;
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid #222;
+            color: #555;
+            font-size: 14px;
+        }
+        footer a {
+            color: #8a2be2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="download.html">Скачать</a>
+        <a href="news.html">Новости</a>
+        <a href="legal.html">Документы</a>
+        <a href="contact.html">Контакты</a>
+        <a href="https://kashmaos.com" target="_blank">kashmaos.com</a>
+        <a href="https://kashmaos.ru" target="_blank">kashmaos.ru</a>
+    </nav>
+
+    <header>
+        <h1><span>KF Production</span> (OS) представляет</h1>
+        <p>Добро пожаловать в мир KashmaOS — операционной системы, созданной с нуля на C++ и Win32 API</p>
+    </header>
+
+    <div class="hero">
+        <h2>KashmaOS</h2>
+        <p>Операционная система нового поколения. Написана с нуля без сторонних библиотек. Свои игры, приложения, голосовые команды и кастомный интерфейс.</p>
+        <a href="download.html" class="btn">Скачать KashmaOS</a>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <div class="icon">&#128187;</div>
+            <h3>С нуля</h3>
+            <p>Написана на чистом C++ с Win32 API/GDI. Никаких сторонних библиотек.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">&#127918;</div>
+            <h3>Встроенные игры</h3>
+            <p>Тетрис, Змейка, 2048, Пончик-Мастер, Калькулятор и другие.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">&#127909;</div>
+            <h3>Видео-студия</h3>
+            <p>Встроенный плеер с 4 авторскими видео и синтезированными звуковыми дорожками.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">&#128274;</div>
+            <h3>Безопасность</h3>
+            <p>Шифровальщик файлов, менеджер паролей с шифрованием. Всё под контролем.</p>
+        </div>
+    </div>
+
+    <div class="news">
+        <h2>Новости</h2>
+        <div class="news-card">
+            <div class="date">22 июня 2026</div>
+            <h3>KashmaOS — релиз!</h3>
+            <p>Первая версия KashmaOS готова. ОС включает рабочий стол с drag-and-drop иконками, панель задач, меню "Пуск" с 20 приложениями, встроенные игры, видео-плеер с авторскими видео, менеджер задач, шифровальщик файлов и многое другое.</p>
+        </div>
+        <div class="news-card">
+            <div class="date">22 июня 2026</div>
+            <h3>Полный юридический комплект</h3>
+            <p>KF Production подготовила полную юридическую документацию: лицензии, политика конфиденциальности, оферта, EULA — всё на 5 языках (RU, EN, DE, JA, ZH) и адаптации для 36 стран мира.</p>
+        </div>
+        <div class="news-card">
+            <div class="date">22 июня 2026</div>
+            <h3>Кастомный курсор и озвучка</h3>
+            <p>Добавлен пурпурный мерцающий курсор с анимацией. Все звуки синтезированы на заказ — жёсткие квадратные волны заменены на приятные锯齿ообразные и шумовые синтезаторы.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 <a href="about.html">KF Production / KashmaOS Studios</a>. Все права защищены.
+        <br><a href="https://kashmaos.com" target="_blank">kashmaos.com</a> &middot; <a href="https://kashmaos.ru" target="_blank">kashmaos.ru</a>
+    </footer>
+</body>
+</html>
